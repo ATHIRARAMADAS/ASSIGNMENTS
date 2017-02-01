@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+.button {
+	font-size: 24px;
+	background-color: #4CAF50;
+	text-align: center;
+    text-decoration: none;
+	border-radius: 8px;
+}
+</style>
+</head>
+  <body>
+    <p>CLICK THE BUTTON TO CALCULATE SUM OF TWO NUMBERS</p>
+    <input type="button" class="button" onclick="myFunction()" value="ADD NUMBERS ">
+    <br/>
+    <br/><b>ENTER FIRST NUMBER:
+    <input type="text" id="txt1" name="text1">
+	ENTER SECOND NUMBER
+    <input type="text" id="txt2" name="text2">
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var y = document.getElementById("txt1").value;
+        var z = document.getElementById("txt2").value;
+        var x = +y + +z;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>
